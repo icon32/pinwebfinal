@@ -43,6 +43,8 @@ class CommentsController extends Controller
         $comments->post()->associate($post_id);
         $comments->save();
 
+
+
         return redirect('/posts/'.$posts->slug);
 
 

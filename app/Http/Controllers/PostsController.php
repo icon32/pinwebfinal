@@ -87,7 +87,8 @@ class PostsController extends Controller
 
         $posts->comments()->save($newcomment);
 
-
+        $posts->total_comments = $posts->total_comments + 1;
+        $posts->save();
 
 
         return redirect('/posts/'.$posts->slug);
