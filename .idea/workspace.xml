@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a20f796-7140-4ed7-b49b-776056d30b8f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/posts/pinweblogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/posts/pinweblogo50px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/mainjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/mainjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/pinweb.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/pinweb.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/newpost.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newpost.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pinhome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pinhome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,26 +33,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="70">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
               <folding>
                 <element signature="e#7#44#0#PHP" expanded="true" />
-                <marker date="1590939445136" expanded="true" signature="877:878" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-              <folding>
-                <element signature="e#40#57#0#PHP" expanded="true" />
+                <marker date="1590968279154" expanded="true" signature="872:873" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,6 +64,7 @@
       <find>alert</find>
       <find>likediv</find>
       <find>submit</find>
+      <find>go</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,25 +104,25 @@
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/resources/views/searchResults.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/public/js/mainjs.js" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/pinweb.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LikesController.php" />
         <option value="$PROJECT_DIR$/resources/views/singlepost.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pinhome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/profile.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/editpost.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/newpost.blade.php" />
         <option value="$PROJECT_DIR$/config/mail.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Rules/MatchOldPassword.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ChangePasswordController.php" />
         <option value="$PROJECT_DIR$/resources/views/controlPanel.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/public/js/mainjs.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/pinweb.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pinhome.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/profile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/newpost.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -247,61 +244,6 @@
               <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Rules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="passwords" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinwebfinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinwebfinal" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -368,12 +310,13 @@
       <workItem from="1590930894929" duration="727000" />
       <workItem from="1590932975534" duration="5884000" />
       <workItem from="1590940349890" duration="1026000" />
-      <workItem from="1590941741944" duration="257000" />
+      <workItem from="1590941741944" duration="855000" />
+      <workItem from="1590962523975" duration="5757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217513000" />
+    <option name="totallyTimeSpent" value="223868000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -385,12 +328,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50159234" side_tool="true" weight="0.24603175" />
       <window_info id="npm" order="1" sideWeight="0.50084037" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49840763" visible="true" weight="0.204236" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49840763" visible="true" weight="0.20714286" />
       <window_info id="Structure" order="3" sideWeight="0.50159234" side_tool="true" weight="0.24603175" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -552,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -576,69 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1500">
-          <caret line="4463" column="4" selection-start-line="4463" selection-start-column="1" selection-end-line="4463" selection-end-column="4" />
-          <folding>
-            <element signature="e#103902#103946#0" />
-            <element signature="e#103966#104022#0" />
-            <element signature="e#104054#104181#0" />
-            <element signature="e#104212#104348#0" />
-            <element signature="e#104361#104464#0" />
-            <element signature="e#104478#104554#0" />
-            <element signature="e#104571#104623#0" />
-            <element signature="e#104647#104672#0" />
-            <element signature="e#104691#104721#0" />
-            <element signature="e#104745#104774#0" />
-            <element signature="e#104789#104938#0" />
-            <element signature="e#104965#105032#0" />
-            <element signature="e#105088#105110#0" />
-            <element signature="e#105125#105249#0" />
-            <element signature="e#105275#105342#0" />
-            <element signature="e#105362#105473#0" />
-            <element signature="e#105494#105554#0" />
-            <element signature="e#105574#105677#0" />
-            <element signature="e#105722#105788#0" />
-            <element signature="e#105815#105917#0" />
-            <element signature="e#105947#106055#0" />
-            <element signature="e#106074#106102#0" />
-            <element signature="e#106104#106486#0" />
-            <element signature="e#106147#106326#0" />
-            <element signature="e#106348#106484#0" />
-            <element signature="e#106506#106534#0" />
-            <element signature="e#106536#107749#0" />
-            <element signature="e#106580#106702#0" />
-            <element signature="e#106725#106806#0" />
-            <element signature="e#106835#106890#0" />
-            <element signature="e#106930#107012#0" />
-            <element signature="e#107119#107162#0" />
-            <element signature="e#107272#107318#0" />
-            <element signature="e#107359#107439#0" />
-            <element signature="e#107548#107590#0" />
-            <element signature="e#107702#107747#0" />
-            <element signature="e#107771#107802#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/mainjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/pinweb.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/singlepost.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -653,20 +525,6 @@
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pinhome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="64" column="80" selection-start-line="64" selection-start-column="80" selection-end-line="64" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -723,13 +581,6 @@
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/newpost.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
@@ -816,17 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#7#44#0#PHP" expanded="true" />
-            <marker date="1590939445136" expanded="true" signature="877:878" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommentsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -839,10 +679,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="546">
           <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/mainjs.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="4476" column="1" lean-forward="true" selection-start-line="4476" selection-start-column="1" selection-end-line="4476" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+          <folding>
+            <element signature="e#3298#3322#0#HTML" expanded="true" />
+            <element signature="e#3493#3520#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pinhome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <element signature="e#572#596#0#HTML" expanded="true" />
+            <element signature="e#767#794#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/newpost.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+          <folding>
+            <element signature="e#3058#3126#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/pinweb.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="e#7#44#0#PHP" expanded="true" />
+            <marker date="1590968279154" expanded="true" signature="872:873" ph="..." />
           </folding>
         </state>
       </provider>

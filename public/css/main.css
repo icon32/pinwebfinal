@@ -14,13 +14,21 @@
 }
 
 
-/*@media (max-width: 874px) {*/
+@media (max-width: 874px) {
 
-/*    .main-nav {*/
-/*       display: none;*/
-/*    }*/
+    .main-nav {
+       display: none;
+    }
 
-/*}*/
+}
+
+@media (min-width: 874px) {
+
+    .mobile-nav {
+        display: none;
+    }
+
+}
 
 
 

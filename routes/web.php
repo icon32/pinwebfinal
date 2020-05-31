@@ -19,13 +19,8 @@ Route::get('/', 'PostsController@index');
 
 Auth::routes();
 
-
-
 //User Control Page
 Route::get('/controlPanel', 'homeController@index')->name('home');
-
-
-
 
 //Posts Mechanism
 Route::get('/posts/newpost','PostsController@create');
@@ -35,11 +30,6 @@ Route::get('/posts/{slug}/edit','PostsController@edit');
 Route::get('/posts/{slug}','PostsController@show');
 Route::put('/posts/{slug}','PostsController@update');
 Route::get('/posts-delete/{slug}','PostsController@destroy');
-//Route::get('/posts',function (){
-//    return  view('profile');
-//});
-
-
 
 // Profile Mechanism
 Route::get('/profile','UserController@index');
@@ -49,16 +39,11 @@ Route::put('/profile/{name}/edit/name', 'UserController@editname');
 Route::put('/profile/{name}/edit/desc', 'UserController@editdescription');
 Route::put('/profile/{name}/edit/avatar', 'UserController@editavatar');
 
-
-
 // Comments Mechanism
 Route::post('/comments/create','PostsController@createcomment');
 
-
 //Search Mechanism
 Route::get('/search','SearchController@index');
-
-
 
 //Likes
 Route::post('/postliked','LikesController@postliked');

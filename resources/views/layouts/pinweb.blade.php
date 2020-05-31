@@ -15,7 +15,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Styles -->
 {{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
@@ -30,11 +31,13 @@
 
 
         <!--- Nav Menu Start -->
-        <div class="container-fluid main-nav">
+
+        <!---- Desctop Menu  Start----->
+        <div class="container-fluid main-nav ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 " id="logodiv">
-                        <a href="{{ url('/') }}" ><img src="/img/posts/pinweblogo50px.png" class="nav-logo float-right" alt="PinWeb"> </a>
+                        <a href="{{ url('/') }}" ><img src="/img/pinweblogo50px.png" class="nav-logo float-right" alt="PinWeb"> </a>
                     </div>
 
 
@@ -115,6 +118,100 @@
                 </div>
             </div>
         </div>
+        <!---- Desctop Menu End ----->
+
+
+
+        <!---- Mobile Menu  Start----->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mobile-nav">
+
+
+            <a href="{{ url('/') }}" class="navbar-brand" style="margin-right: 0px;" href="#"><img src="/img/pinweb-mob-logo.png" class="nav-logo float-right"  style="height: 50px;" alt="PinWeb"></a>
+
+            <div class="ml-auto p-2" style="float: right; margin-left: 0px;padding-left: 0px;" id="mobilemenudiv">
+
+
+                <ul class="nav float-right">
+                    @if (Route::has('login'))
+
+                            @auth
+                                <li class="nav-item dropdown">
+
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        <img src="/img/users/{{Auth::user()->avatar}}" style="width: 30px; height:30px; border-radius: 15px;">  <span class="caret"></span>
+                                    </a>
+
+
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                        <a class="dropdown-item" href="{{ route('home') }}"
+                                           onclick="event.preventDefault();
+                                                                    document.getElementById('go-to-home-mob').submit();">
+                                            {{ __('Control Panel') }}
+                                        </a>
+                                        <form id="go-to-home-mob" action="{{ route('home') }}" method="GET" style="display: none;">
+                                            @csrf
+                                        </form>
+
+                                        <a class="dropdown-item" href="{{ url('/') }}"
+                                           onclick="event.preventDefault();
+                                                                    document.getElementById('go-to-pin-mob').submit();">
+                                            {{ __('Front Page') }}
+                                        </a>
+                                        <form id="go-to-pin-mob" action="{{ url('/') }}" method="GET" style="display: none;">
+                                            @csrf
+                                        </form>
+
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                                    document.getElementById('right-dropDown-mob').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+
+                                        <form id="right-dropDown-mob" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                            @else
+                                <p><a class="nav-link" href="{{ route('login') }}">Log in / Sink In</a> </p>
+                            @endauth
+
+
+                        @endif
+
+
+                        <a href="{{  url('/posts/newpost') }}"  style=" border-radius: 5px; height: 40px;" class="btn btn-danger" ><i class="fas fa-plus" ></i></a>
+                </ul>
+
+
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" style="border: white;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-search" style=""></i>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form  action="/search" method="get" class=" form-inline my-2 my-lg-0" id="">
+                    <input type="text" class="form-control" id="" name="query" placeholder="Search User Posts">
+                    <button type="submit" class="btn btn-danger" style="margin-left: 5px;" >Search!</button>
+                    @if($errors -> has('query'))
+                        <p style="color: red; background-color: white;" >{{ $errors->first('query') }}</p>
+                    @endif
+                </form>
+
+            </div>
+        </nav>
+
+        <!---- Mobile Menu  End----->
+
+
+
 
         <!--- Nav Menu End -->
 

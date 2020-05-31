@@ -75,7 +75,7 @@
                                              <button type="submit" class="btn btn-danger" style="margin-top:5px; width:200px;">Publish!</button>
 
                                             @else
-                                                <p style=" color: #721c24; background-color: #721c24; margin-top:10px;">
+                                                <p style=" color: white; font-size: 16px; font-weight: 900; background-color: #721c24; margin-top:10px;">
                                                     You have to Login in order to Publish a post
                                                 </p>
                                             @endif
