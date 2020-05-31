@@ -33,12 +33,22 @@
         </div>
         <div class="col-md-8">
 
+
+
+            <div class="container-fluid d-flex justify-content-center text-center" style=" margin-bottom:50px; background-color: grey; border-radius: 15px 15px 0px 0px;" >
+                <p style="font-size: 30px; font-weight: 900px; color: white; margin-top: 5px;" >Change Password</p>
+
+            </div>
+
             <form method="POST" action="{{ route('change.password') }}">
                 @csrf
 
-                @foreach ($errors->all() as $error)
-                    <p class="text-danger">{{ $error }}</p>
-                @endforeach
+                <div class="container-fluid d-flex justify-content-center text-center">
+                    <p class=" text-danger" >{{$message ?? ''}}</p>
+                    @foreach ($errors->all() as $error)
+                        <p class="text-danger">{{ $error }}</p>
+                    @endforeach
+                </div>
 
                 <div class="form-group row">
                     <label for="password" class="col-md-4 col-form-label text-md-right">Current Password</label>
