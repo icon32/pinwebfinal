@@ -21,9 +21,9 @@ Auth::routes();
 
 
 
-
 //User Control Page
 Route::get('/controlPanel', 'homeController@index')->name('home');
+
 
 
 
@@ -49,6 +49,8 @@ Route::put('/profile/{name}/edit/name', 'UserController@editname');
 Route::put('/profile/{name}/edit/desc', 'UserController@editdescription');
 Route::put('/profile/{name}/edit/avatar', 'UserController@editavatar');
 
+
+
 // Comments Mechanism
 Route::post('/comments/create','PostsController@createcomment');
 
@@ -62,4 +64,6 @@ Route::get('/search','SearchController@index');
 Route::post('/postliked','LikesController@postliked');
 Route::post('/postunliked','LikesController@postunliked');
 
-
+//Change Password
+Route::get('change-password', 'ChangePasswordController@index');
+Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
