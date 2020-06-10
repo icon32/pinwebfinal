@@ -5239,12 +5239,11 @@ input[type="button"].btn-block {
     margin-bottom: 0.75rem;
 }
 
-@media (min-width: 992px) {
-    .card-columns {
-        column-count: 5!important;
-    }
-}
 
+
+/*.card-columns.profile-cards{*/
+/*    column-count: 5;*/
+/*}*/
 
 
 
@@ -5258,12 +5257,40 @@ input[type="button"].btn-block {
         column-gap: 1.25rem;
         orphans: 1;
         widows: 1;
+        width: 100%;
     }
     .card-columns .card {
         display: inline-block;
         width: 100%;
     }
 }
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 5;
+        width: 100%;
+    }
+}
+
+@media (max-width: 362px) {
+
+
+    .profile-cards> .card{
+        width:200px;
+
+    }
+}
+
+
+
+@media (max-width: 588px) {
+
+
+    .card-columns.profile-cards{
+        column-count: 1;
+    }
+}
+
 
 .accordion>.card {
     overflow: hidden;

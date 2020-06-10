@@ -7,11 +7,11 @@
 <div class="container">
         <div class="row">
 
-            <div class="card-columns">
+            <div class="card-columns culumnsed">
 
                 @foreach($posts as $post)
                 <div class="card">
-                    <img class="card-img-top" loading="lazy" src="img/posts/{{$post->image}}" alt="Card image cap">
+                    <img class="card-img-top" loading="lazy" src="img/posts/{{$post->image}}" style="border-radius:15px 15px 0px 0px!important;"  alt="Card image cap">
                     <div class="card-body">
 
                         <div class="row">

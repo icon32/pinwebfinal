@@ -113,6 +113,9 @@ class PostsController extends Controller
         $posts = new Posts();
         $user = Auth::user();
 
+        $slug = request('title');
+        $slug = preg_replace("![^a-z0-9]+!i", "-", $slug);
+
         if ($upimage = $request->file('image')){ //Bring the file in and test if there is one
 
            if(!$upimage->move(public_path('/img/posts/'),$upimage->getClientOriginalName())){ //Testing if file uploaded
@@ -129,18 +132,18 @@ class PostsController extends Controller
      //*When you create an article if the name exists it will put a -2 if not it will continue
      //*
      //*
-        $title = $request->title;
-        $duplicate = Posts::where('title', $title)->get();
+
+        $duplicate = Posts::where('slug', $slug)->get();
         $dupnumber = 0;
         foreach ($duplicate as $dup) {
             $dupnumber ++;
         };
         if ($dupnumber == 0){
             $posts->title = request('title'); //store title
-            $posts->slug = request('title');
+            $posts->slug = $slug;
         }else {
             $posts->title = request('title').'-2'; //store title
-            $posts->slug = request('title').'-2';
+            $posts->slug = $slug.'-2';
         }
 
         // Checking For Duplicated Title - Start
@@ -165,9 +168,23 @@ class PostsController extends Controller
     //Redirect to Post Edit Page
     public function edit($slug)
     {
+        $currentuser = Auth::user();
         $posts = Posts::where('slug', $slug)->first();
 
-        return view('editpost',['posts' => $posts]);
+        if ($currentuser) {
+            if ($currentuser->id == $posts->user_id) {
+                return view('editpost', ['posts' => $posts]);
+
+            } else {
+//                abort(404);
+                return $this->show($slug);
+            }
+        }else{
+            return $this->show($slug);
+        }
+
+
+
     }
 
     //Edit a Post
@@ -204,15 +221,18 @@ class PostsController extends Controller
         $duplicate = Posts::where('title', $slug)->get();
         $dupnumber = 0;
 
+        $slug = request('title');
+        $slug = preg_replace("![^a-z0-9]+!i", "-", $slug);
+
         foreach ($duplicate as $dup) {
             $dupnumber ++;
         };
         if ($dupnumber == 1){
             $posts->title = request('title'); //store title
-            $posts->slug = request('title');
+            $posts->slug = $slug;
         }else {
             $posts->title = request('title').'-2'; //store title
-            $posts->slug = request('title').'-2';
+            $posts->slug = $slug.'-2';
         }
 
         // Checking For Duplicated Title - Start

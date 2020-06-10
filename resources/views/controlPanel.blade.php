@@ -36,7 +36,7 @@
 
 
             <div class="container-fluid d-flex justify-content-center text-center" style=" margin-bottom:50px; background-color: grey; border-radius: 15px 15px 0px 0px;" >
-                <p style="font-size: 30px; font-weight: 900px; color: white; margin-top: 5px;" >Change Password</p>
+                <p style="font-size: 30px; font-weight: 900; color: white; margin-top: 5px;" >Change Password</p>
 
             </div>
 

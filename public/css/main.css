@@ -30,8 +30,22 @@
 
 }
 
+.card:hover{
+    border: 3px ;
+    border-color: red!important;
+    border-radius: 15px!important;
+    border-style: solid!important;
 
+}
 
+@media (max-width: 874px) {
+
+    .card:hover{
+        border: 0px ;
+
+    }
+
+}
 
 
 
@@ -128,25 +142,6 @@
     display:inline;
 }
 
-@media (max-width: 362px) {
 
-
-    .profile-cards> .card{
-        width:200px;
-
-    }
-}
-
-.card-columns.profile-cards{
-    column-count: 3!important;
-}
-
-@media (max-width: 588px) {
-
-
-    .card-columns.profile-cards{
-        column-count: 1!important;
-    }
-}
 
 
